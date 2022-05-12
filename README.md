@@ -12,6 +12,8 @@
 <br>
 > ! ESTE PROYECTO ESTA EN UNA FASE INCIAL, SEAN COMPASIVOS :P
 
+## **Descarga del proyecto**: [mega link](https://mega.nz/file/BoRwjJxK#DwhA62e7TvCg0izRk30q9RUSukBwDu_csd54HdriO7g)
+            
   Sobre este proyecto:
 -
 PMP tiene como objetivo ser un recurso de aprendizaje de código abierto, que ayude aquellos que buscan ver cómo funcionan los protocolos dentro de un entorno controlado y seguro. Este proyecto no es perfecto, no está hecho por profesionales, soy un estudiante que se encontró una curva de aprendizaje bastante inclinada cuando comenzo en el mundillo de las redes, y que quiere probeer de herramientas a aquellos que vienen detrás :)
@@ -92,6 +94,8 @@ Cómo publicar cambios:
 <br>
 > ! THIS PROJECT IS IN A REALLY EARLY STAGE, PLEASE BE COMPASSIONATE :P
 
+## **Download the project**: [mega link](https://mega.nz/file/BoRwjJxK#DwhA62e7TvCg0izRk30q9RUSukBwDu_csd54HdriO7g)
+            
 About this project:
 - 
 PMP aims to be an opensource learning resource, that helps new people to see how protocols operates inside a controlled and secure environment. This project is not perfect, is not made by professionals, I'm an student myself that found a fairly steep learning curve when I wanted to start in the world of networks, so I wanted to help others.
