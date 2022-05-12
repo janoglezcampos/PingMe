@@ -94,7 +94,7 @@ Cómo publicar cambios:
 
 About this project:
 - 
-PMP is aims to be an opensource learning resource, that helps new people to see how protocols operates inside a controlled and secure environment. This project is not perfect, is not made by professionals, I'm an student myself that found a fairly steep learning curve when I wanted to start in the world of networks, so I wanted to help others.
+PMP aims to be an opensource learning resource, that helps new people to see how protocols operates inside a controlled and secure environment. This project is not perfect, is not made by professionals, I'm an student myself that found a fairly steep learning curve when I wanted to start in the world of networks, so I wanted to help others.
   
 If you have experience in this topic, and there is something you think is wrong, please let me know, feedback is great; also if you want to collaborate, you are welcome, go to the how to publish changes section to know more.
 
