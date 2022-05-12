@@ -39,7 +39,7 @@ Otras características son:
 
 Primeros pasos:
 -
-En primer lugar, necesitas gns3, puedes instalarlo aquí y el archivo IBS.gns3project, las imágenes del firmware de los routers deberían estar incluidas, pero también puede encontrarlas aquí. También se recomienda wireshark, ya que se puede usar de forma nativa en gns3 para analizar el tráfico, puedes encontrarlo aquí.
+En primer lugar, necesitas [gns3](https://www.gns3.com/software/download) y el archivo del proyecto que se indica arriba. También se recomienda [wireshark](https://www.wireshark.org/download.html), ya que se puede usar de forma nativa en gns3 para analizar el tráfico.
 
 Si esta es tu primera vez con gns3 y un proyecto de este tamaño, calma... pilla un café, y sientate comodo, gns3 se toma su tiempo para cargar y comenzar, así que no entres en pánico si no ves que las cosas se muevan al instante.. Gns3 tiene una arquitectura cliente-servidor, es por eso que quizás veas ventanas emergentes que intentan conectarse a un servidor en localhost.
 
@@ -122,7 +122,7 @@ Other features are:
 
 Start walking around:
 -
-First of all, you need gns3, you can install it here and the IBS.gns3project, the router's firmware images should be included, but you can find them here too. Also wireshark is recomended, since it can be used natively in gns3 to analyze traffic, you can find it here.
+First of all, you need [gns3](https://www.gns3.com/software/download) and the file linked above. Also [wireshark](https://www.wireshark.org/download.html) is recomended, since it can be used natively in gns3 to analyze traffic.
 
 If this is your first time with gns3 and a project of this size, stay calm... btw go take a coffee, it takes its time to load and start, so don't panic if you don't see things doing things instantly. Gns3 has a client-server arquitecture, thats why you see popups trying to connect to a server in localhost.
 
