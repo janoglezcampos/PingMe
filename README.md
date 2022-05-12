@@ -20,9 +20,9 @@ PMP tiene como objetivo ser un recurso de aprendizaje de código abierto, que ay
 Si tienes experiencia en este tema y hay algo que crees que está mal, hazmelo saber, el feedback siempre se agradece; si quieres colaborar de forma activa, eres bienvenido, ve a la sección de cómo publicar cambios para saber más.
 
 El proyecto incluye 4 sistemas autónomos: (Esta descripción está incompleta, se añadirá una explicación detallada en el futuro)
-> **ISP 55:** Este es el más complejo de los 4, solo permite el tráfico ipv4 de forma predeterminada, pero implementa mpls y túneles 6rd para permitir el tráfico ipv6.
+> **ISP 55:** Este es el más complejo de los 4, solo permite el tráfico ipv4 de forma predeterminada, pero implementa túneles 6rd para permitir el tráfico ipv6.
 > **ISP 2000:** Estos son los nuevos en la industria, solo permiten ipv6 de forma predeterminada, pero se implementan túneles ip4ip6.
-> **ISP 3000:** Al igual que ISP 55, solo permiten el tráfico ipv4 de forma predeterminada, pero usando 6pe, el tráfico ipv6 puede atravesarlo.
+> **ISP 3000:** Al igual que ISP 55, solo permiten el tráfico ipv4 de forma predeterminada, pero usando tuneles 6pe, el tráfico ipv6 puede atravesarlo.
 > **ISP 100:** Este ISP que tiene como objetivo simular el resto de Internet.
 
 El color del punto final indica:
@@ -35,7 +35,7 @@ El color del punto final indica:
 > **Círculo azul**: Cliente conectado a ISP 3000 mediante PPPoE.
 
 Otras características son:
->Servidor dhcp centralizado, rbgp dual (el servidor dhcp también actúa como rbgp) 2 vpn separados administrados por vrfs, ospf, ibgp y ebgp. (Probablemente me estoy perdiendo algo)
+>Servidor dhcp centralizado, rbgp dual (el servidor dhcp también actúa como rbgp) 2 vpn separadas administradas por vrfs, encaminamiento por circuitos virtuales con mpls, y protocolos de encaminamiento como ospf, ibgp y ebgp.
 
 Primeros pasos:
 -
@@ -103,7 +103,7 @@ PMP aims to be an opensource learning resource, that helps new people to see how
 If you have experience in this topic, and there is something you think is wrong, please let me know, feedback is great; also if you want to collaborate, you are welcome, go to the how to publish changes section to know more.
 
 The project includes 4 autonomous system: (This description is work in progress, an in depth explanation will be added)
-> **ISP 55:** This is the more complex one, it only allow ipv4 traffic by default, but implements mpls and 6rd tunnels to allow ipv6 traffic. 
+> **ISP 55:** This is the more complex one, it only allow ipv4 traffic by default, but implements 6rd tunnels to allow ipv6 traffic. 
 > **ISP 2000:** This are the new guys, they only allow ipv6 by default, but ip4ip6 tunnels are deployed.
 > **ISP 3000:** Like ISP 55, they only allow ipv4 traffic by default, but using 6pe tunnels ipv6 traffic can go throw.
 > **ISP 100:** This is a dual stack isp that aims to simulate the rest of internet.
@@ -118,7 +118,7 @@ The end-point color indicates:
 > **Blue circle**: Client connected to ISP 3000 throw PPPoE. 
 
 Other features are:
->Cgnat on green endpoints, centraliced dhcp server, dual rbgp (the dhcp server also act as rbgp), PPPoE that allows ClientPPP to acces the ISP 3000 network, 2 separated vpns managed by vrfs, ospf, ibgp and ebgp. (Probably Im missing something)
+>Cgnat on green endpoints, centraliced dhcp server, dual rbgp (the dhcp server also act as rbgp), PPPoE that allows ClientPPP to acces the ISP 3000 network, 2 separated vpns managed by vrfs, mpls, ospf, ibgp and ebgp. (Probably Im missing something)
 
 Start walking around:
 -
