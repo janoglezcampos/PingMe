@@ -8,7 +8,7 @@
 ![Overview](files/project_overview.png?raw=true)
 
 <details>
-<summary>**Castellano**</summary>
+<summary>Castellano</summary>
 <br>
 > ! ESTE PROYECTO ESTA EN UNA FASE INCIAL, SEAN COMPASIVOS :P
 
@@ -90,7 +90,7 @@ Cómo publicar cambios:
 </details>
 
 <details>
-<summary>**English**</summary>
+<summary>English</summary>
 <br>
 > ! THIS PROJECT IS IN A REALLY EARLY STAGE, PLEASE BE COMPASSIONATE :P
 
