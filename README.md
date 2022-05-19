@@ -39,11 +39,11 @@ El color del punto final indica:
   **Rojo:** Cliente con rango Ipv6 asignado.
             
             
-    - Círculo verde: Túnel a través de CGNAT.
+    * Círculo verde: Túnel a través de CGNAT.
             
-    - Círculo amarillo: Túnel con salida publica.
+    * Círculo amarillo: Túnel con salida publica.
             
-    - Círculo azul: Cliente conectado a ISP 3000 mediante PPPoE.
+    * Círculo azul: Cliente conectado a ISP 3000 mediante PPPoE.
 
 ### Otras características son:
             
@@ -80,7 +80,7 @@ Cuando ya esté todo configurado, es momento de jugar un poco con el entorno. Po
 Si no funcionase, veríamos un mensaje `DDD` en la terminal del PC. Esto significa que el primer descubrimiento del DHCP fallo, estó sucede porque el PC finaliza la configuración antes que el CPE, por lo que DHCP no se carga a tiempo.
 Para resolver este problema simplemente escribimos:
             
-```dhcp```
+   - dhcp
 
 Si aparece DORA, significa que completó todos los pasos de descubrimiento, oferta, solicitud, reconocimiento, ahora puedes repetir el ping. Si deseas analizar los paquetes, simplemente utiliza wireshark, e inicializa la captura.
 
