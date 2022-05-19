@@ -21,38 +21,39 @@ PMP tiene como objetivo ser un recurso de aprendizaje de código abierto, que ay
 Si tienes experiencia en este tema y hay algo que crees que está mal, hazmelo saber, el feedback siempre se agradece; si quieres colaborar de forma activa, eres bienvenido, ve a la sección de cómo publicar cambios para saber más.
 
 El proyecto incluye 4 sistemas autónomos: (Esta descripción está incompleta, se añadirá una explicación detallada en el futuro)
-> **ISP 55:** Este es el más complejo de los 4, solo permite el tráfico IPv4, pero implementa túneles 6rd para permitir el trafico IPv6 .
+            
+- **ISP 55:** Este es el más complejo de los 4, solo permite el tráfico IPv4, pero implementa túneles 6rd para permitir el trafico IPv6 .
 
-> **ISP 2000:** Estos sistemas son los más modernos, solo permiten IPv6, pero se pueden utilizar túneles IPv4IPv6.
+- **ISP 2000:** Estos sistemas son los más modernos, solo permiten IPv6, pero se pueden utilizar túneles IPv4IPv6.
 
-> **ISP 3000:** Muy parecido al ISP 55, solo permite el tráfico IPv4, pero usando túneles 6pe se puede atravesar tráfico IPv6.
+- **ISP 3000:** Muy parecido al ISP 55, solo permite el tráfico IPv4, pero usando túneles 6pe se puede atravesar tráfico IPv6.
 
-> **ISP 100:** Este ISP tiene como objetivo simular el resto de Internet.
+- **ISP 100:** Este ISP tiene como objetivo simular el resto de Internet.
 
 El color del punto final indica:
 
   **Amarillo:** Cliente con dirección ipv4 pública.
             
--  **Verde:** Cliente con dirección ipv4 privada (CGNAT).
+  **Verde:** Cliente con dirección ipv4 privada (CGNAT).
             
-* **Rojo:** Cliente con rango Ipv6 asignado.
+  **Rojo:** Cliente con rango Ipv6 asignado.
             
             
-   > - Círculo verde: Túnel a través de CGNAT.
-   > - Círculo amarillo: Túnel con salida publica.
-   > - Círculo azul: Cliente conectado a ISP 3000 mediante PPPoE.
+    - Círculo verde: Túnel a través de CGNAT.
+    - Círculo amarillo: Túnel con salida publica.
+    - Círculo azul: Cliente conectado a ISP 3000 mediante PPPoE.
 
 ### Otras características son:
             
-> Servidor DHCP centralizado
+- Servidor DHCP centralizado
 
-> RBGP dual (El servidor DHCP actúa también como RBGP)
+- RBGP dual (El servidor DHCP actúa también como RBGP)
 
-> Dos VPN separadas administradas por VRFS
+- Dos VPN separadas administradas por VRFS
 
-> Enrutamiento por circuitos virtuales con MPLS
+- Enrutamiento por circuitos virtuales con MPLS
 
-> Protocolos de enrutamiento como OSPF, IBGP y EBGP
+- Protocolos de enrutamiento como OSPF, IBGP y EBGP
 
             
             
