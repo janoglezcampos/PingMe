@@ -31,11 +31,11 @@ El proyecto incluye 4 sistemas autónomos: (Esta descripción está incompleta, 
 
 El color del punto final indica:
 
-   > **Amarillo:** Cliente con dirección ipv4 pública.
+ > **Amarillo:** Cliente con dirección ipv4 pública.
             
-   > **Verde:** Cliente con dirección ipv4 privada (CGNAT).
+ > **Verde:** Cliente con dirección ipv4 privada (CGNAT).
             
-   > **Rojo:** Cliente con rango Ipv6 asignado.
+> **Rojo:** Cliente con rango Ipv6 asignado.
             
             
    > - Círculo verde: Túnel a través de CGNAT.
