@@ -7,6 +7,15 @@
 
 ![Overview](files/project_overview.png?raw=true)
 
+            ██████╗ ██╗███╗   ██╗ ██████╗ ███╗   ███╗███████╗██████╗ ██╗     ███████╗      ██╗
+            ██╔══██╗██║████╗  ██║██╔════╝ ████╗ ████║██╔════╝██╔══██╗██║     ██╔════╝     ██╔╝
+            ██████╔╝██║██╔██╗ ██║██║  ███╗██╔████╔██║█████╗  ██████╔╝██║     ███████╗    ██╔╝ 
+            ██╔═══╝ ██║██║╚██╗██║██║   ██║██║╚██╔╝██║██╔══╝  ██╔═══╝ ██║     ╚════██║    ╚██╗ 
+            ██║     ██║██║ ╚████║╚██████╔╝██║ ╚═╝ ██║███████╗██║     ███████╗███████║     ╚██╗
+            ╚═╝     ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝╚═╝     ╚══════╝╚══════╝      ╚═╝
+
+![Overview](files/project_overview.png?raw=true)
+
 <details>
 <summary>Castellano</summary>
 <br>
@@ -20,67 +29,95 @@ PMP tiene como objetivo ser un recurso de aprendizaje de código abierto, que ay
 Si tienes experiencia en este tema y hay algo que crees que está mal, hazmelo saber, el feedback siempre se agradece; si quieres colaborar de forma activa, eres bienvenido, ve a la sección de cómo publicar cambios para saber más.
 
 El proyecto incluye 4 sistemas autónomos: (Esta descripción está incompleta, se añadirá una explicación detallada en el futuro)
-> **ISP 55:** Este es el más complejo de los 4, solo permite el tráfico ipv4 de forma predeterminada, pero implementa túneles 6rd para permitir el tráfico ipv6.
-> **ISP 2000:** Estos son los nuevos en la industria, solo permiten ipv6 de forma predeterminada, pero se implementan túneles ip4ip6.
-> **ISP 3000:** Al igual que ISP 55, solo permiten el tráfico ipv4 de forma predeterminada, pero usando tuneles 6pe, el tráfico ipv6 puede atravesarlo.
-> **ISP 100:** Este ISP que tiene como objetivo simular el resto de Internet.
+> **ISP 55:** Este es el más complejo de los 4, solo permite el tráfico IPv4, pero implementa túneles 6rd para permitir el trafico IPv6 .
+
+> **ISP 2000:** Estos sistemas son los más modernos, solo permiten IPv6, pero se pueden utilizar túneles IPv4IPv6.
+
+> **ISP 3000:** Muy parecido al ISP 55, solo permite el tráfico IPv4, pero usando túneles 6pe se puede atravesar tráfico IPv6.
+
+> **ISP 100:** Este ISP tiene como objetivo simular el resto de Internet.
 
 El color del punto final indica:
-> **Amarillo:** Cliente con dirección ipv4 pública.
-> **Verde:** Cliente con dirección ipv4 privada (CGNAT).
-> **Rojo:** Cliente con rango Ipv6 asignado.
-> - Círculo verde: Túnel a través de CGNAT.
-> - Círculo amarillo: Túnel con salida publica.
->
-> **Círculo azul**: Cliente conectado a ISP 3000 mediante PPPoE.
 
-Otras características son:
->Servidor dhcp centralizado, rbgp dual (el servidor dhcp también actúa como rbgp) 2 vpn separadas administradas por vrfs, encaminamiento por circuitos virtuales con mpls, y protocolos de encaminamiento como ospf, ibgp y ebgp.
+   > **Amarillo:** Cliente con dirección ipv4 pública.
+            
+   > **Verde:** Cliente con dirección ipv4 privada (CGNAT).
+            
+   > **Rojo:** Cliente con rango Ipv6 asignado.
+            
+            
+   > - Círculo verde: Túnel a través de CGNAT.
+   > - Círculo amarillo: Túnel con salida publica.
+   > - Círculo azul: Cliente conectado a ISP 3000 mediante PPPoE.
 
+### Otras características son:
+            
+> Servidor DHCP centralizado
+
+> RBGP dual (El servidor DHCP actúa también como RBGP)
+
+> Dos VPN separadas administradas por VRFS
+
+> Enrutamiento por circuitos virtuales con MPLS
+
+> Protocolos de enrutamiento como OSPF, IBGP y EBGP
+
+            
+            
+            
+            
+            
+            
+            
 Primeros pasos:
 -
-En primer lugar, necesitas [gns3](https://www.gns3.com/software/download) y el archivo del proyecto que se indica arriba. También se recomienda [wireshark](https://www.wireshark.org/download.html), ya que se puede usar de forma nativa en gns3 para analizar el tráfico.
+Antes de empezar, necesitas [gns3](https://www.gns3.com/software/download) y el archivo del proyecto. No estaría de más utilizar [Wireshark](https://www.wireshark.org/download.html) , ya que se puede utilizar de forma nativa en gns3 para analizar tráfico.
 
-Si esta es tu primera vez con gns3 y un proyecto de este tamaño, calma... pilla un café, y sientate comodo, gns3 se toma su tiempo para cargar y comenzar, así que no entres en pánico si no ves que las cosas se muevan al instante.. Gns3 tiene una arquitectura cliente-servidor, es por eso que quizás veas ventanas emergentes que intentan conectarse a un servidor en localhost.
 
-Después de abrir el proyecto, cuando la ventana emergente de carga desaparezca, deberías estar listo para pulsar el botón de play (el verde en la parte superior izquierda) y los enlaces deberían comenzar a cambiar de rojo a verde. Lleva su tiempo, muchos protocolos que se ejecutan desde cold-start, así que espera unos minutos para asegurarte de que todo esté listo.
+Si es tu primera vez con gns3 y con un proyecto de este calibre, preparate un café y tomatelo con calma. GNS3 tarda su tiempo para cargar y arrancar.
 
-Pues ya tiene todas las interfaces con ips configuradas y sus tablas de rutas están llenas, es hora de jugar.
-Primero puedes probar el camino más largo; desde una terminal de usuario final (haga doble clic en una PC verde, se debe abrir una terminal), escribe:
+Una vez el proyecto haya cargado y la ventana de carga desaparezca, deberías estar listo para pulsar el botón de play, y los enlaces deberían empezar cambiar de rojo a verde. Lleva su tiempo, ya que muchos protocolos se ejecutan desde cold-start, así que sera mejor esperar un par de minutos.
+
+Cuando ya esté todo configurado, es momento de jugar un poco con el entorno. Podemos empezar probando el camino más largo: Desde una terminal de usuario (clicando dos veces en un pc con el recuadro verde) escribe:
 
 > **ping 50.0.0.2** (el servidor en la parte inferior)
 
-Si no funciona, no te preocupes, ¿ves un mensaje "DDD" en el terminal de PC? Significa que el primer descubrimiento de dhcp falló, esto sucede porque el PC finaliza su configuración antes que el CPE, por lo que dhcp no se carga a tiempo. Para resolverlo solo escribe:
+Si no funcionase, veríamos un mensaje `DDD` en la terminal del PC. Esto significa que el primer descubrimiento del DHCP fallo, estó sucede porque el PC finaliza la configuración antes que el CPE, por lo que DHCP no se carga a tiempo.
+Para resolver este problema simplemente escribimos:
+            
 > **dhcp**
 
-Si ahora ves DORA, significa que completó todos los pasos de descubrimiento, oferta, solicitud, reconocimiento, ahora puedes repetir el ping.
-Si deseas analizar los paquetes en cualquier enlace (requiere wireshark), simplemente haz click derecho sobre él y haz clic en iniciar captura, debería aparecer una lupa sobre el enlace, recuerda que cerrar Wireshark no detiene la captura, si la lupa está ahí, la captura se está ejecutando y consumiendo recursos, recuarda esto, te salvará de crasheos inesperados.
+Si aparece DORA, significa que completó todos los pasos de descubrimiento, oferta, solicitud, reconocimiento, ahora puedes repetir el ping. Si deseas analizar los paquetes, simplemente utiliza wireshark, e inicializa la captura.
 
 Comandos básicos del terminal ios:
 -
 Si deseas profundizar, debe saber cómo usar el terminal ios, los aspectos más básicos son:
+            
 > **show ip interface brief** o **sh ip int b**
+            
 > **sh ip route**
+            
+Entrar al modo de configuración global:
+            
+> **conf t**
 
-Entrando al modo de configuración dglobal:
-> **configurar terminal** o **conf t**
-
-Pero la palabra clave más importante es "?", escribe "?" después de cualquier comando y obtendrá todas las opciones que puedes usar, usa ***enter*** y ***space*** para avanzar.
+Aunque recomiendo usar ? después de cada comando, ya que obtendremos todas las opciones que puedes usar.
 
 Revisar la configuración del router:
+            
 -
 Para ver la configuración de cualquier router con el proyecto parado, puedes hacer click derecho en el router deseado e ir a "edit config". Si el proyecto se está ejecutando, también puedes escribir en el terminal:
-> **show run** o **sh run**
+            
+> **sh run**
 
-y usa ***enter*** y ***space*** para avanzar.
 
-Ttrabajando en:
--
-- Permitir que los clientes tengan diferentes rangos de ipv6 asignados (lo que permite a las empresas tener rangos más grandes), implica la configuración de un túnel 6rd a una anycast en los border router.
+Trabajando en:
+
+- Permitir que los clientes tengan diferentes rangos de IPv6 asignados (Lo que permite a las empresas tener rangos más grandes), esto implica la configuración de un túnel 6rd en anycast en los border router.
 
 
 TO-DO:
--
+
 - Servidores DNS
 
 
