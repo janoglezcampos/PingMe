@@ -39,11 +39,11 @@ El color del punto final indica:
   **Rojo:** Cliente con rango Ipv6 asignado.
             
             
-    * Círculo verde: Túnel a través de CGNAT.
+    - Círculo verde: Túnel a través de CGNAT.
             
-    * Círculo amarillo: Túnel con salida publica.
+    - Círculo amarillo: Túnel con salida publica.
             
-    * Círculo azul: Cliente conectado a ISP 3000 mediante PPPoE.
+    - Círculo azul: Cliente conectado a ISP 3000 mediante PPPoE.
 
 ### Otras características son:
             
@@ -75,50 +75,47 @@ Una vez el proyecto haya cargado y la ventana de carga desaparezca, deberías es
 
 Cuando ya esté todo configurado, es momento de jugar un poco con el entorno. Podemos empezar probando el camino más largo: Desde una terminal de usuario (clicando dos veces en un pc con el recuadro verde) escribe:
 
-> **ping 50.0.0.2** (el servidor en la parte inferior)
+`ping 50.0.0.2` (el servidor en la parte inferior)
 
 Si no funcionase, veríamos un mensaje `DDD` en la terminal del PC. Esto significa que el primer descubrimiento del DHCP fallo, estó sucede porque el PC finaliza la configuración antes que el CPE, por lo que DHCP no se carga a tiempo.
 Para resolver este problema simplemente escribimos:
             
-   - dhcp
+   `dhcp`
 
 Si aparece DORA, significa que completó todos los pasos de descubrimiento, oferta, solicitud, reconocimiento, ahora puedes repetir el ping. Si deseas analizar los paquetes, simplemente utiliza wireshark, e inicializa la captura.
 
-Comandos básicos del terminal ios:
--
-Si deseas profundizar, debe saber cómo usar el terminal ios, los aspectos más básicos son:
-            
-> **show ip interface brief** o **sh ip int b**
-            
-> **sh ip route**
-            
+
+
+Comandos básicos de IOS:
+
+Si deseas profundizar , debes saber cómo usar la terminal IOS, los comandos más básicos son:
+
+`show ip interface brief /o/ sh ip int b sh ip route`
+
 Entrar al modo de configuración global:
-            
-> **conf t**
+
+`conf t`
 
 Aunque recomiendo usar ? después de cada comando, ya que obtendremos todas las opciones que puedes usar.
 
-Revisar la configuración del router:
-            
--
-Para ver la configuración de cualquier router con el proyecto parado, puedes hacer click derecho en el router deseado e ir a "edit config". Si el proyecto se está ejecutando, también puedes escribir en el terminal:
-            
-> **sh run**
 
+REVISAR LA CONFIGURACION DEL ROUTER
 
-Trabajando en:
+Para ver la configuración de cualquier router escribimos en terminal:
 
-- Permitir que los clientes tengan diferentes rangos de IPv6 asignados (Lo que permite a las empresas tener rangos más grandes), esto implica la configuración de un túnel 6rd en anycast en los border router.
+`show run \o\ sh run`
 
+TRABAJANDO EN
 
-TO-DO:
+* Permitir que los clientes tengan diferentes rangos de IPv6 asignados (Lo que permite a las empresas tener rangos más grandes), esto implica la configuración de un túnel 6rd en anycast en los border router.
 
-- Servidores DNS
+TO DO
 
+* Servidores DNS
 
-Cómo publicar cambios:
--
-(Trabajando en ello)
+PUBLICAR CAMBIOS
+
+(TRABAJANDO EN ELLO)
 </details>
 
 <details>
