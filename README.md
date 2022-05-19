@@ -11,7 +11,7 @@
 <details>
 <summary>Castellano</summary>
 <br>
-> ! ESTE PROYECTO ESTA EN UNA FASE INCIAL, SEAN COMPASIVOS :P
+> ! ESTE PROYECTO ESTA EN DESARROLLO, SED COMPRENSIBLES :P 
 
 ## **Descarga del proyecto**: [mega link](https://mega.nz/file/BoRwjJxK#DwhA62e7TvCg0izRk30q9RUSukBwDu_csd54HdriO7g)
             
