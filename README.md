@@ -17,7 +17,7 @@
             
   Sobre este proyecto:
 -
-PMP tiene como objetivo ser un recurso de aprendizaje de código abierto, que ayude aquellos que buscan ver cómo funcionan los protocolos dentro de un entorno controlado y seguro. Este proyecto no es perfecto, no está hecho por profesionales, soy un estudiante que se encontró una curva de aprendizaje bastante inclinada cuando comenzo en el mundillo de las redes, y que quiere probeer de herramientas a aquellos que vienen detrás :)
+PMP tiene como objetivo ser un recurso de aprendizaje de código abierto, que ayude aquellos que buscan observar cómo funcionan los protocolos dentro de un entorno controlado y seguro. Este proyecto no es perfecto, no está hecho por profesionales, soy un estudiante que se encontró una curva de aprendizaje bastante inclinada cuando comenzo en el mundillo de las redes, y que quiere proveer de herramientas a aquellos que vienen detrás :)
 Si tienes experiencia en este tema y hay algo que crees que está mal, hazmelo saber, el feedback siempre se agradece; si quieres colaborar de forma activa, eres bienvenido, ve a la sección de cómo publicar cambios para saber más.
 
 El proyecto incluye 4 sistemas autónomos: (Esta descripción está incompleta, se añadirá una explicación detallada en el futuro)
